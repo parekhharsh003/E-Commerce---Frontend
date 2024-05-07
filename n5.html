@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Img/logo1.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#new">New</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="Img/cart.png" class="cart" onclick="window.location.href='cart.html';">
+        </div>
+<div id="main">
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="Img/n5.jpg" width="100%" id="MainImg" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="Img/n5.jpg" width="100%" class="small-img" alt="" onclick="handleClick('Img/n5.jpg')">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Img/Hoodies/n2.jpg" width="100%" class="small-img" alt="" onclick="handleClick('Img/Hoodies/n2.jpg')"> 
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Img/Hoodies/n3.jpg" width="100%" class="small-img" alt="" onclick="handleClick('Img/Hoodies/n3.jpg')">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Img/Hoodies/n4.jpg" width="100%" class="small-img" alt="" onclick="handleClick('Img/Hoodies/n4.jpg')">
+                    </div>
+                </div>
+            </div>
+            <div class="single-pro-details">
+                <h6>Home / Jacket </h6>
+                <h4>Men's Fashion Jacket </h4>
+                <h2>RS.2500.00</h2>
+                <select>
+                    <option>Select Size</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>Small</option>
+                    <option>Large</option>
+                </select>
+                <input type="number" value="1" id="product-quantity">
+                <button class="normal" onclick="addToCart('Men s Fashion Hoodies',2099)">Add To Cart</button>
+                <h4>Product Details</h4>
+                <span>The Gildan Ultra Cotton Hoodies is made from a substantial 6.0 oz . per sq. yd. fabric 
+                     constructed from 100% cotton, this classic fit preshrunk Hoodies knit provides unmatched
+                     comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-
+                     neddle collar, and available in a range of colors, it offers it all in the ultimate head-turning
+                     package.
+                </span>
+            </div>
+        </section>
+
+        <section id="product1" class="section-p1">
+            <div id="products">
+                <h2>Featured Products</h2>
+                <p>Winter Collection New Morden Design</p>
+                <div class="pro-container">
+                    <div class="pro" onclick="window.location.href='sproduct1.html';">
+                        <img src="Img/f1.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>Winter Cap Men Sports Skullies Beanies (Black)</h5>
+                            <h4>RS.599</h4>
+                        </div>
+                        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    </div>
+                    <div class="pro" onclick="window.location.href='sproduct2.html';">
+                        <img src="Img/f2.jpg" alt="">
+                        <div class="des">
+                            <span>nike</span>
+                            <h5>Wool Beanie Cap Thick Fleece Lined Winter Hat(Black)</h5>
+                            <h4>RS.899</h4>
+                        </div>
+                        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    </div>
+                    <div class="pro" onclick="window.location.href='sproduct3.html';">
+                        <img src="Img/f3.jpg" alt="">
+                        <div class="des">
+                            <span>HIVER Comfy </span>
+                            <h5>Hand Gloves</h5>
+                            <h4>RS.999</h4>
+                        </div>
+                        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    </div>
+    
+                    <div class="pro" onclick="window.location.href='sproduct4.html';">
+                        <img src="Img/f4.jpg" alt="">
+                        <div class="des">
+                            <span>NARUTO</span>
+                            <h5>Hoodies</h5>
+                            <h4>RS.499</h4>
+                        </div>
+                        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    </div>
+                </div>
+
+            </section>
+            <section id="newsletter" class="section-p1 section-m1">
+                <div class="newstext">
+                    <h4>Sign Up For newsletters</h4>
+                    <p>Get E-Mail updetes about our latest shop and <span>special offers.</span></p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Your email address">
+                    <button class="normal">Sign Up</button>
+                </div>
+            </section>
+        
+            <footer class="section-p1" id="contact">
+                <div class="col">
+                    <img class="logo" src="Img/logo1.png" alt="">
+                    <h4>Contact</h4>
+                    <p><strong>Address :</strong> 562 GIDC Road, Street 32, Anand</p>
+                    <p><strong>Phone :</strong> +91 2222 365 / +91 01 2345 6789</p>
+                    <p><strong>Hours :</strong> 10:00 - 18:00, Mon - Sat</p>
+                </div>
+                <div class="col" id="about">
+                    <h3><strong>Who We Are?</strong></h3>
+                    <p5>We are a company that offers the<br> 
+                    best price of sale all around India
+                    <br>We want you as customers to remain<br> 
+                    satisfied with our work and service.<br>
+                    We offer you everything you need.<br> 
+                    Come to us and enjoy our clothes<br>
+                    and designs</p5>
+                </div>
+        
+                <div class="col install">
+                    <h4>Install App</h4>
+                    <p>From App Store or Google Play</p>
+                    <div class="row">
+                        <img src="Img/app.jpg" alt="">
+                        <img src="Img/play.jpg" alt="">
+                    </div>
+                    <p>Secured Payment Gateways</p>
+                    <img src="Img/pay.png" alt="">
+                </div>
+            </footer>
+        
+        </div>
+        <script src="index.js"></script>
+ </body>
